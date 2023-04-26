@@ -1,0 +1,65 @@
+@font-face {
+    font-family: pretend;
+    src: url(Assets/fonts/Pretendard-Regular.otf);
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    text-decoration: none;
+    list-style: none;
+    font-family: pretend;
+}
+
+:root{
+    --green: #219150;
+    --black: #10221b;
+    --white: #fff;
+    --light-bg: #eee;
+
+    --border: 1rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+}
+
+/* HTML start */
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+}
+::-webkit-scrollbar{
+    width: 1rem;
+}
+::-webkit-scrollbar-track{
+    background: var(--white);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--black);
+    border-radius: 20px;
+}
+/* HTML end */
+
+/* HEADER */
+.header{
+    position: fixed;
+    top: 0; left: 0;
+    padding: 2rem 9%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin-right: auto;
+    font-size: 2.4rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+.logo i{
+    
+}
+/* HEADER END */
