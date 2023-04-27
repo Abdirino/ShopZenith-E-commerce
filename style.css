@@ -202,6 +202,11 @@ label:hover{
     html{
         font-size: 55%;
     }
+    .home .box{
+        justify-content: center;
+        background-position: right !important;
+    }
+    
 }
 
 @media (max-width: 768px) {
