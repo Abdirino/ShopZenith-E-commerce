@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdirino E-commerce again</title>
+    <title>ShopZenith E-Commerce</title>
     <!-- css link -->
     <link rel="stylesheet" href="style.css">
     <!-- font-awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Website Icon -->
+    <link rel="website icon" type="png" href="Assets/images/ShopeZenith-Icon.png">
 </head>
 <body>
     <!-- Header Section -->
 
     <header class="header">
 
-        <a href="#" class="logo"> <i class="fas fa-shopping"></i> Abdirino.</a>
+        <a href="#" class="logo"> <i class="fa-brands fa-shopify"></i> ShopZenith<span>.</span></a>
 
         <nav class="navbar">
+            <div id="nav-close" class="fa-solid fa-xmark"></div>
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#shop">Shop</a>
@@ -28,13 +31,27 @@
 
         <div class="icons">
             <div id="menu-btn" class="fas fa-bars"></div>
-            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fa-sharp fa-solid fa-cart-shopping"></a>
             <div id="search-btn" class="fas fa-search"></div>
         </div>
     </header>
 
     <!-- Header Section end -->
+
+    <!-- search form -->
+    <div class="search-form">
+
+        <div id="close-search" class="fa-solid fa-xmark"></div>
+
+        <form action="">
+            <input type="search" placeholder="Search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </div>
+    <!-- search form end -->
     
+
+
 
     <!-- javascript external link -->
     <script src="script.js" defer></script>
