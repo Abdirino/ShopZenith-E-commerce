@@ -24,6 +24,10 @@
     --box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
 }
 
+section{
+    padding: 6rem 8%;
+}
+
 /* HTML start */
 html{
     font-size: 62.5%;
@@ -47,18 +51,19 @@ html{
 .header{
     position: fixed;
     top: 0; left: 0;
-    padding: 2rem .6rem;
+    padding: 1.2rem .6rem;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    background-color: rgba(0,0,0,0.6);
 }
 .logo{
     margin-right: auto;
     font-size: 3.4rem;
     font-weight: bolder;
-    color: var(--black);
+    color: var(--white);
 }
 .logo i{
     color: var(--green);
@@ -71,7 +76,7 @@ html{
     margin-right: 1rem;
     font-size: 1.7rem;
     font-weight: bold;
-    color: var(--black);
+    color: var(--white);
 }
 .navbar a:hover{
     color: var(--green);
@@ -81,7 +86,7 @@ html{
     font-size: 2.5rem;
     margin-left: 2rem;
     cursor: pointer;
-    color: var(--black);
+    color: var(--white);
 }
 .icons a:hover, .icons div:hover{
     color: var(--green);
@@ -94,7 +99,7 @@ html{
     font-size: 4.8rem;
     display: none;
     cursor: pointer;
-    color: var(--black);
+    color: var(--white);
 }
 /* HEADER END */
 
@@ -152,6 +157,30 @@ label:hover{
 }
 /* Search Form end */
 
+/* Home Section */
+.home{
+    padding: 0;
+}
+.box{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-size: cover !important;
+    background-position: center !important;
+    justify-content: flex-end;
+    padding: 2rem 8%;
+}
+.second{
+    justify-content: flex-start;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--black);
+}
+/* Home Section end */
+
 
 
 
@@ -163,6 +192,9 @@ label:hover{
 @media (max-width: 1200px){
     .header{
         padding: 2rem;
+    }
+    section{
+        padding: 3rem 1.6rem;
     }
 }
 
@@ -179,7 +211,7 @@ label:hover{
     .navbar{
         position: fixed;
         top: 0; left: -110%;
-        background: var(--white);
+        background: var(--black);
         z-index: 10000;
         width: 35rem;
         height: 100%;

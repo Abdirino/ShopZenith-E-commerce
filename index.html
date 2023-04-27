@@ -7,6 +7,8 @@
     <title>ShopZenith E-Commerce</title>
     <!-- css link -->
     <link rel="stylesheet" href="style.css">
+    <!-- Swiper JS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <!-- font-awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Website Icon -->
@@ -49,10 +51,33 @@
         </form>
     </div>
     <!-- search form end -->
+
+    <!-- HOME Section -->
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(Assets/images/Home-2\ Banner.png) no-repeat;"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box second" style="background: url(Assets/images/Home-1\ Banner.png) no-repeat;"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(Assets/images/Home-3\ Banner.png) no-repeat;"></div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <!-- HOME Section End -->
     
 
 
-
+    <!-- Swiper JS LINK  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- javascript external link -->
     <script src="script.js" defer></script>
 </body>
